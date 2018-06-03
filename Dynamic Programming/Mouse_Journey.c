@@ -2,7 +2,6 @@
 
 /*
 Written by Andrew Huang 2018-06-03
-
 An easy way to think of this question is the maze as a tilted Pascal's Triangle.
 */
 
@@ -49,7 +48,7 @@ int main(void) {
       }
     }
   }
-  
+  //This prints the number at the bottom of the maze, which like a Pascal's triangle, represents the number of routes leading to it.
   printf( "%d",maze[rows-1][columns-1] );
   return 0;
 }
