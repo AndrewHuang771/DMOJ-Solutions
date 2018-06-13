@@ -46,6 +46,8 @@ int box( int sumArray[], int limit, int size ) {
 }
 
 int main() {
+  cin.sync_with_stdio(0);
+  cin.tie(0);
   int numberOfCups = 0,
     numberOfFillings = 0;
 
