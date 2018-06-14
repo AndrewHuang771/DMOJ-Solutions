@@ -18,9 +18,8 @@ int main() {
 
         maxMultiplier = ((numberOfCandies - i) / favNumber);
         if ( maxMultiplier*favNumber == numberOfCandies ) { 
-          numberOfWays ++;
           numberOfWays += (maxMultiplier - 1)*2;
-          numberOfWays += 2;
+          numberOfWays += 3;
         } else if ( maxMultiplier == 0 ) { 
             if ( numberOfCandies - i == 0 ) {
               numberOfWays ++;
