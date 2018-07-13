@@ -4,8 +4,8 @@ using namespace std;
 
 void update( int bTree[][SIZE], int indxX, int indxY, int value, int size ) {
   for ( int x = indxX; x <= size; x += ( x & -x ) ) {
-	  for ( int y = indxY; y <= size; y += ( y & -y ) ) {
-		  bTree[ x ][ y ] += value;
+    for ( int y = indxY; y <= size; y += ( y & -y ) ) {
+       bTree[ x ][ y ] += value;
     }
   } 
 }
