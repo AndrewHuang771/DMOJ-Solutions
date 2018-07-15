@@ -8,9 +8,7 @@ void update( long long int bTree[][ MAXSIZE ][ MAXSIZE ], int indX, int indY, in
   for ( int x = indX; x <= size; x += ( x & -x ) ) {
     for ( int y = indY; y <= size; y += ( y & -y ) ) {
       for ( int z = indZ; z <= size; z += ( z & -z ) ) {
-        if ( x <= size && y <= size && z <= size ) {
-          bTree[x][y][z] += value;
-        }
+        bTree[x][y][z] += value;
       }
     }
   }
